@@ -39,7 +39,7 @@ new Countdown();
 let countdown = new Countdown({
     selector: '#timer',
     msgBefore: "새로고침해주세요",
-    msgAfter: "",
+    msgAfter: "녹두거리의 이야기",
     msgPattern: "{hours} 시간&nbsp; {minutes} 분&nbsp; {seconds} 초",
     dateStart: new Date(),
     dateEnd: new Date('2018/03/20 00:00'), // 20 00:00
@@ -54,7 +54,9 @@ let bd = new Date('2018/03/20 00:00'),
     now = new Date();
 if (bd < now) {
   document.querySelector(".help").remove();
-  showStart();
+  setTimeout(function() {
+    showStart();
+  }, 3000);
 }
 
 // change effect
