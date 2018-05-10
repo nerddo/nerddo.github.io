@@ -65,6 +65,6 @@ function showStart() {
     document.querySelector("#canv").remove();
   }, 1000);
   setTimeout(function() {
-    document.querySelector("#wrapper").innerHTML = "<a class='btn fadeIn' href='diff'></a>";
+    document.querySelector("#wrapper").innerHTML = "<a class='btn fadeIn' href='diff' disabled></a>";
   }, 1000);
 }
